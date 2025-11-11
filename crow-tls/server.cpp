@@ -10,7 +10,7 @@ int main()
     });
 
     app.port(8443)
-        .ssl_file("server.crt", "server.key")
+        .ssl_file("certs/server.crt", "certs/server.key")
         .multithreaded()
         .run();
 
